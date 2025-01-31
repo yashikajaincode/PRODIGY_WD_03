@@ -82,6 +82,7 @@ document.addEventListener('DOMContentLoaded', () => {
         const bestSpot = minimax(board, 'O').index;
         board[bestSpot] = 'O';
         cells[bestSpot].textContent = 'O';
+        cells[bestSpot].classList.add('O');
         setTimeout(() => {
             clickSound.currentTime = 0;
             clickSound.play();
@@ -104,6 +105,7 @@ document.addEventListener('DOMContentLoaded', () => {
         if (board[index] === '' && currentPlayer === 'X') {
             board[index] = 'X';
             event.target.textContent = 'X';
+            event.target.classList.add('X');
             setTimeout(() => {
                 clickSound.currentTime = 0;
                 clickSound.play();
@@ -126,7 +128,10 @@ document.addEventListener('DOMContentLoaded', () => {
     const resetGame = () => {
         board = ['', '', '', '', '', '', '', '', ''];
         currentPlayer = 'X';
-        cells.forEach(cell => cell.textContent = '');
+        cells.forEach(cell => {
+            cell.textContent = '';
+            cell.classList.remove('X', 'O');
+        });
         message.textContent = '';
     };
 
