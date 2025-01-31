@@ -1,7 +1,7 @@
 # TIC TAC TOE Web Application 🚀
 
 ## Overview 🌟
-Welcome to Prodigy Web Development Project 03! This project showcases an advanced web development task that includes various features and functionalities aimed at demonstrating best practices in web design and development.
+This project showcases an advanced web development task that includes various features and functionalities aimed at demonstrating best practices in web design and development.
 
 ## Features ✨
 - **Responsive Design** 📱: The web application is fully responsive and works seamlessly on devices of all sizes.
